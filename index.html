@@ -9,7 +9,7 @@
 </head>
 <body>
         <div class="container">
-            <div class="heading">💨🌧️Weather App😶‍🌫️🌦️</div>
+            <div class="heading">🌦️Weather App😶‍🌫️</div>
             <div class="bar"></div>
             <form id="weatherForm" style="display:flex;gap:8px;">
                 <input type="text" id="cityInput" placeholder="Enter city name" style="flex:1;padding:8px;">
@@ -17,14 +17,25 @@
             </form>
             <div id="weatherResult" style="margin-top:20px;font-size:1.1rem;">
                 <div class="left">
-                    <div class="data city">Delhi</div>
-                    <div class="data temp">19° C</div>
+                    <div class="data city">India</div>
+                    <div class="data temp">37° C</div>
                     <div class="data weather">Cloudy</div>
                 </div>
                 <div class="right">
                     <div class="data humidity">💧15%</div>
                     <div class="data windSpeed">💨16km/h</div>
                 </div>
+            </div>
+                <div id="weatherDetailsList">
+                <ul class="weather-details-list">
+                <li><span class="label">Pressure</span><span class="value" id="pressure">-</span></li>
+                <li><span class="label">Visibility</span><span class="value" id="visibility">-</span></li>
+                <li><span class="label">Feels Like</span><span class="value" id="feelslike">-</span></li>
+                <li><span class="label">Sea Level</span><span class="value" id="sealevel">-</span></li>
+                <li><span class="label">Ground level</span><span class="value" id="groundlevel">-</span></li>
+                <li><span class="label">Sunrise</span><span class="value" id="sunrise">-</span></li>
+                <li><span class="label">Sunset</span><span class="value" id="sunset">-</span></li>
+              </ul>
             </div>
         </div>
     </body>
