@@ -274,6 +274,10 @@ body {
   .weather-temp {
     font-size: 2.5rem;
   }
-    .container{
-max-width:90vw;
+  .container{
+    max-width: 80vw;
+  }
+  .temp{
+    font-size: 55px;
+  }
 }
