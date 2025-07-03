@@ -221,3 +221,57 @@ body {
     color: #fff;
     font-weight: 600;
 }
+
+
+@media (max-width: 800px) {
+  #weatherResult, #weatherDetailsList {
+    max-width: 98vw;
+    padding: 24px 8px 16px 8px;
+  }
+  .weather-main, #weatherResult {
+    flex-direction: column !important;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .weather-left, .weather-details {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .weather-details {
+    min-width: 0;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .weather-details span {
+    text-align: left;
+    min-width: 0;
+  }
+  #weatherForm {
+    flex-direction: column !important;
+
+    align-items: center;
+    gap: 8px;
+  }
+  #weatherForm input[type="text"], #weatherForm button {
+    width: 100%;
+    max-width: 75%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 500px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+  #weatherForm input[type="text"] {
+    font-size: 0.95rem;
+    max-width: 180px;
+  }
+  #weatherResult, #weatherDetailsList {
+    padding: 12px 2vw;
+    font-size: 0.98rem;
+  }
+  .weather-temp {
+    font-size: 2.5rem;
+  }
+}
